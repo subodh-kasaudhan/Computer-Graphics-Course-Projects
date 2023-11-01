@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>WebGL 3D Cube Drawing</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="assignment2.js"></script>
+  </head>
+
+  <body onload="webGLStart();">
+    <canvas
+      id="simple3DCubeRender"
+      style="border: none"
+      width="1500"
+      height="500"
+    ></canvas>
+    <div><span
+      style="
+        padding: 11%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+      "
+    >
+      <b>Per-Face Shading</b>
+    </span>
+
+    <span
+      style="
+        padding: 9%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+      "
+    >
+      <b>Gouraud Shading (Per-Vertex)</b>
+    </span>
+    <span
+      style="
+        padding-left: 7%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+      "
+    >
+      <b>Phong Shading (Per-Fragment)</b>
+    </span></div>
+    <br>
+    
+    <div>
+      <span
+        style="font-family: 'Times New Roman', Times, serif; font-size: larger"
+      >
+        Control Light Position:
+      </span>
+      <span class="sliders">
+        <input
+          type="range"
+          style="width: 300px"
+          min="-20"
+          max="100"
+          value="10"
+          class="slider1"
+          id="myRange1"
+        />
+      </span>
+    </div>
+    <br>
+    <div>
+      <span
+        style="font-family: 'Times New Roman', Times, serif; font-size: larger"
+      >
+        Control Camera Zoom:
+      </span>
+      <span class="sliders">
+        <input
+          type="range"
+          style="width: 300px"
+          min="1.0"
+          max="25.0"
+          value="2.0"
+          class="slider2"
+          id="myRange2"
+        />
+      </span>
+    </div>
+  </body>
+</html>
